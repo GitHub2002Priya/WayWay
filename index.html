@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+<title>WingWay</title>
+<style>
+  h1 {
+    color: blueviolet;
+  }
+  .blink {
+    animation: blinker 1.5s step-start infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  .typed-out {
+    overflow: hidden;
+    border-right: .15em solid blue;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 1.6s infinite forwards;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  .header img {
+    width: 800px;
+    height: 300px;
+    animation: growShrink 2s infinite alternate;
+  }
+  @keyframes growShrink {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  body {
+    background: white;
+    color: #333;
+    font: 100% Lato, Arial, Sans Serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #background-wrap {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .bubble {
+    background-color: #3498db;
+  }
+  .x1 { /* Add other bubble classes as needed */ }
+  .color {
+    color: black;
+  }
+  .color3 {
+    color: black;
+  }
+  .footer {
+    background-color: rgb(12, 149, 203);
+  }
+  .hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+</style>
+</head>
+<body>
+<h1 class="WingWay blink">WingWay</h1>
+
+<ul class="nav__links">
+  <li class="link"><a href="#"></a></li>
+</ul>
+
+<nav>
+  <button class="btn"><img src= alt="img/Search.JPG">Search</button>
+</nav>
+
+<center>
+  <h1 class="Find And Book Have A Great Experience typed-out">Find And Book<br>Have A Great Experience</h1>
+  <div class="container"></div>
+</center>
+<br>
+<br><br><br><br><br><br>
+
+<center>
+  <div class="header">
+    <img src="img/flight.jpg"  height="20px" width="20px" alt="header"/>
+  </div>
+</center>
+
+<section class="section__container booking__container">
+  <div class="booking__nav">
+    <span>Economy Class</span>
+    <span>Business Class</span>
+    <span>First Class</span>
+  </div>
+
+  <form>
+    <div class="form__group">
+      <span><i class="ri-map-pin-line"></i></span>
+      <div class="input__content">
+        <div class="input__group">
+          <input type="text" />
+          <label>Location</label>
+        </div>
+        <p>Where are you going?</p>
+      </div>
+    </div>
+
+    <div class="form__group">
+      <span><i class="ri-user-3-line"></i></span>
+      <div class="input__content">
+        <div class="input__group">
+          <input type="number" />
+          <label>Travellers</label>
+        </div>
+        <p>Add guests</p>
+      </div>
+    </div>
+
+    <div class="form__group">
+      <span><i class="ri-calendar-line"></i></span>
+      <div class="input__content">
+        <div class="input__group">
+          <input type="text" />
+          <label>Departure</label>
+        </div>
+        <p>Add date</p>
+      </div>
+    </div>
+
+    <div class="form__group">
+      <span><i class="ri-calendar-line"></i></span>
+      <div class="input__content">
+        <div class="input__group">
+          <input type="text" />
+          <label>Return</label>
+        </div>
+        <p>Add date</p>
+      </div>
+    </div>
+    <button class="btn"><img src="img/sicon.jpg" alt="Search"><i class="ri-search-line"></i></button>
+  </form>
+</section>
+
+<div id="background-wrap">
+  <div class="bubble x1"></div>
+  <div class="bubble x2"></div>
+  <div class="bubble x3"></div>
+  <div class="bubble x4"></div>
+  <div class="bubble x5"></div>
+  <div class="bubble x6"></div>
+  <div class="bubble x7"></div>
+  <div class="bubble x8"></div>
+  <div class="bubble x9"></div>
+  <div class="bubble x10"></div>
+</div>
+
+<section class="section__container plan__container">
+  <p class="subheader">TRAVEL SUPPORT</p>
+  <h2 class="section__header">Plan your travel with confidence</h2>
+  <p class="description">
+    Find help with your bookings and travel plans, and see what to expect along your journey.
+  </p>
+
+  <div class="plan__grid">
+    <div class="plan__content">
+      <span class="number">01</span>
+      <h4>Travel Requirements for Dubai</h4><br>
+      <img src="img/w3.jpg" width="40px" alt="Travel Requirements for Dubai"/>
+      <p class="color">
+        Stay informed and prepared for your trip to Dubai with essential travel requirements, ensuring a smooth and hassle-free experience in this vibrant and captivating city.
+      </p>
+
+      <span class="number02">02</span>
+      <h4>Multi-risk travel insurance</h4><br>
+      <img src="img/w2.jpg" alt="Multi-risk travel insurance">
+      <p class="color">
+        Comprehensive protection for your peace of mind, covering a range of potential travel risks and unexpected situations.
+      </p>
+
+      <span class="number03">03</span>
+      <h4>Travel Requirements by destinations</h4><br>
+      <img src="img/w1.jpg" width="40%" alt="Travel Requirements by destinations">
+      <p class="color3">
+        Stay informed and plan your trip with ease, as we provide up-to-date information on travel requirements specific to your desired destinations.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="memories">
+  <div class="section__container memories__container">
+    <div class="memories__header">
+      <h2 class="section__header">Travel to make memories all around the world</h2>
+      <button class="view__all">View All</button>
+    </div>
+    <div class="memories__grid">
+      <div class="memories__card">
+        <span><i class="ri-calendar-2-line"></i></span>
+        <h4>Book & relax</h4>
+        <p class="color">
+          With "Book and Relax," you can sit back, unwind, and enjoy the journey while we take care of everything else.
+        </p>
+      </div>
+      <div class="memories__card">
+        <span><i class="ri-shield-check-line"></i></span>
+        <h4>Smart Checklist</h4>
+        <p>
+          Introducing Smart Checklist with us, the innovative solution revolutionizing the way you travel with our airline.
+        </p>
+      </div>
+      <div class="memories__card">
+        <span><i class="ri-bookmark-2-line"></i></span>
+        <h4>Save More</h4>
+        <p class="color">
+          From discounted ticket prices to exclusive promotions and deals, we prioritize affordability without compromising on quality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__container lounge__container">
+  <div class="lounge__images"></div>
+  <div class="lounge__content">
+    <h2 class="section__header">Unaccompanied Minor Lounge</h2>
+    <div class="lounge__grid">
+      <img src="img/lounge1.jpg" alt="lounge" width="50px">
+      <img src="img/lounge2.JPG" alt="lounge" width="50px">
+      <div class="lounge__details">
+        <h4>Experience Tranquility</h4>
+        <p class="color">
+          Serenity Haven offers a tranquil escape, featuring comfortable seating, calming ambiance, and attentive service.
+        </p>
+      </div>
+      <div class="lounge__details">
+        <h4>Elevate Your Experience</h4>
+        <p class="color">
+          Designed for discerning travelers, this exclusive lounge offers premium amenities, assistance, and private workspaces.
+        </p>
+      </div>
+      <div class="lounge__details">
+        <h4>A Welcoming Space</h4>
+        <p class="color">
+          Creating a family-friendly atmosphere, The Family Zone is the perfect haven for parents and children.
+        </p>
+      </div>
+      <div class="lounge__details">
+        <h4>A Culinary Delight</h4>
+        <p class="color">
+          Immerse yourself in a world of flavors, offering international cuisines, gourmet dishes, and carefully curated beverages.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__container travellers__container">
+  <h2 class="section__header">Best travellers of the month</h2>
+  <div class="travellers__grid">
+    <div class="travellers__card">
+      <img src="img/dubai.jpg" alt="traveller"><br>
+      <div class="travellers__card__content">
+        <img src="img/client 1.jpg" alt="client"><br>
+        <h4>Emily Johnson</h4>
+        <p>Dubai</p>
+      </div>
+    </div>
+    <div class="travellers__card">
+      <img src="img/paris.JPG" height="180px" alt="traveller"><br>
+      <div class="travellers__card__content">
+        <img src="img/client2.jpg" alt="client" alt="traveller"><br>
+        <h4>David Smith</h4>
+        <p>Paris</p>
+      </div>
+    </div>
+    <div class="travellers__card">
+      <img src="img/singapore.JPG" height="180px" alt="traveller"><br>
+      <div class="travellers__card__content">
+        <img src="img/client3.jpg" alt="client">
+        <h4>Olivia Brown</h4>
+        <p>Singapore</p>
+      </div>
+    </div>
+    <div class="travellers__card">
+      <img src="img/malaysia.JPG" height="180px" alt="traveller">
+      <div class="travellers__card__content">
+        <img src="img/client4.jpg" alt="client">
+        <h4>Daniel Taylor</h4>
+        <p>Malaysia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="subscribe">
+  <div class="section__container subscribe__container">
+    <h2 class="section__header">Subscribe newsletter & get latest news</h2>
+    <form class="subscribe__form">
+      <input type="text" placeholder="Enter your email here" />
+      <button>Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section__container footer__container">
+    <div class="footer__col">
+      <h3>WingWay</h3>
+      <p>
+        Where Excellence Takes Flight. With a strong commitment to customer satisfaction and a passion for air travel, WingWay Airlines offers exceptional service and seamless journeys.
+      </p>
+      <p>
+        From friendly smiles to state-of-the-art aircraft, we connect the world, ensuring safe, comfortable, and unforgettable experiences.
+      </p>
+    </div>
+    <div class="footer__col">
+      <h4>INFORMATION</h4>
+      <p>Home</p>
+      <p>About</p>
+      <p>Offers</p>
+      <p>Seats</p>
+      <p>Destinations</p>
+    </div>
+    <div class="footer__col">
+      <h4>CONTACT</h4>
+      <p>Support</p>
+      <p>Media</p>
+      <p>Socials</p>
+    </div>
+  </div>
+  <img class="hover" src="img/logo.jpg" height="200px" width="80px" alt="logo">
+  <div class="section__container footer__bar">
+    <p>Copyright © 2023 Web Design Mastery. All rights reserved.</p>
+    <div class="socials">
+      <span><i class="ri-facebook-fill"></i></span>
+      <span><i class="ri-twitter-fill"></i></span>
+      <span><i class="ri-instagram-line"></i></span>
+      <span><i class="ri-youtube-fill"></i></span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
